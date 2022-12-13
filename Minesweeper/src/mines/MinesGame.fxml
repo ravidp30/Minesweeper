@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mines.Controller">
+   <children>
+      <VBox prefHeight="349.0" prefWidth="172.0">
+         <children>
+          <Button fx:id="resetBTN" mnemonicParsing="false" text="Reset" textAlignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="55.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+               </padding>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Width">
+               <VBox.margin>
+                  <Insets left="70.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="heightFLD" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="60.0" right="60.0" />
+               </VBox.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Height">
+               <VBox.margin>
+                  <Insets left="70.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="widthFLD" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="60.0" right="60.0" />
+               </VBox.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mines">
+               <VBox.margin>
+                  <Insets left="70.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="minesFLD" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="60.0" right="60.0" />
+               </VBox.margin>
+            </TextField>
+            <ImageView id="logo" fitHeight="91.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="mines/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <HBox.margin>
+            <Insets top="50.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
